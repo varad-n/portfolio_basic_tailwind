@@ -14,9 +14,9 @@
   <title>Tailwind Portfolio</title>
 </head>
 <body class="font-nunito">
-  <div class="h-1/2 lg:h-screen bg-gradient-to-t from-indigo-200">
+  <div class="h-1/2 lg:h-screen bg-gradient-to-t from-indigo-200 relative">
 
-    <nav class="w-full fixed top-0 bg-white">
+    <nav class="w-full fixed top-0 bg-white ">
         <div class="container mx-auto py-5 flex items-center justify-between">
             <div class="flex items-center gap-2">
                 <img class="w-8" src="../img/logo.png" alt="">
@@ -73,8 +73,13 @@
         </div>
     </nav>
 
-    <img class="absolute bottom-0 right-0" src="../img/man.png" alt="">
+    <img class="absolute bottom-0 right-0 lg:left-0 mx-auto h-5/6 object-cover" src="../img/man.png" alt="">
+    <div class="hidden lg:block absolute -bottom-1/4 right-0 left-0 mx-auto w-big h-big bg-indigo-900 rounded-full -z-10"></div>
 
+    <div>
+      <span class="text-gray-600">Freelance</span>
+      <p class="text-red-500">Developer</p>
+    </div>
 
   </div>
   <script src="app.js"></script>
